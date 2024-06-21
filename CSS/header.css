@@ -1,0 +1,39 @@
+/* Estilos para el encabezado */
+header {
+    padding: 48px;
+    text-align: center;
+    background-image: url(/IMG/Header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #FF5733; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: var(--color-primary-light);
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0 0 20px;
+    color: #e4f2e9;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+header p {
+    margin: 0 0 10px;
+    color: #E4F2E7;
+    font-style: italic; 
+}
+
+header div {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 18px;
+    font-size: 20px;
+    margin-top: 20px; 
+}
+
+header div img {
+    width: 9%;
+    border-radius: 50%; 
+}

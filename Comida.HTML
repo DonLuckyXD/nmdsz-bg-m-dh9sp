@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi comida favorita</title>
+    <link rel="icon" type="image/png" href="IMG/Header.jpg" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div id="todo">
+      <header>
+        <div>
+          <img src="IMG/Logotipo.png" alt="Logo Pou Naco" />
+          <h1>Patatas</h1>
+          <p>Patatas / Más Patatas / Muchísimas más patatas</p>
+        </div>
+      </header>
+      <nav class="navbar">
+        <a href="cargando.html" class="link-carga" data-destino="Index.html">PÁGINA PRINCIPAL</a>
+        <a href="cargando.html" class="link-carga" data-destino="Seriefav.html">SERIE FAVORITA</a>
+      </nav>
+      <div class="row">
+        <aside>
+          <img src="IMG/Pou.png" alt="Foto del Chef" width="100%" />
+          <h2>Pepe Matatas</h2>
+          <p>
+            El chef Pepe Matatas es el chef más conocido de su casa (vive solo),
+            es conocido por sus grandes habilidades para cocinar (se le quema
+            hasta la maruchan) y hoy viene a compartir sus secretos (no tiene)
+            con todos ustedes para que sean igual de buenos chefs (no lo hagan).
+          </p>
+
+          <h3>
+            En esta ocasión les comparte videos que si sirven de como cocinar
+            patatas
+          </h3>
+          <p>
+            Las patatas son la comida favorita de Pons, le gustan mucho (no
+            importa la forma en la que fueron cocinadas mientras estan sean
+            comestibles y sabrosas) desde chico siempre le han gustado las
+            patatas ya que saben muy bien con sal.
+          </p>
+
+          <a href="https://www.youtube.com/watch?v=2jrg8YePv4w" class="video-link">
+            <h4>Patatas</h4>
+            <img src="IMG/Patata3.jpg" alt="video01" class="video-img" />
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=PfHyXikSVBM" class="video-link">
+            <h4>Más Patatas</h4>
+            <img src="IMG/Patata4.jpg" alt="video02" class="video-img" />
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=4WjLTFvp0F8" class="video-link">
+            <h4>Muchas Más patatas</h4>
+            <img src="IMG/Patata5.jpg" alt="video03" class="video-img" />
+          </a>
+        </aside>
+
+        <section class="main">
+          <article>
+            <h2>Patatas / tipos de patatas</h2>
+            <h5>Pons, jun 16, 2024</h5>
+            <img src="IMG/Patata1.jpg" alt="Post 01" />
+            <p>
+              Las patatas son un alimento versátil y delicioso. Aquí tienes algunos tipos comunes de patatas:
+              <br>
+              -Monalisa
+              <br>
+              -Agria
+              <br>
+              -Kennebec o gallega
+              <br>
+              -Spunta
+              <br>
+              -Red Pontiac
+              <br>
+              -Universa
+              <br>
+              -Elodie
+              <br>
+              -Vitelotte
+            </p>
+            <a href="https://www.ecologiaverde.com/tipos-de-patatas-2697.html" class="read-more">Leer mas</a>
+          </article>
+
+          <article>
+            <h2>¿Por qué son tan buenas las patatas?</h2>
+            <h5>Pons, jun 16, 2024</h5>
+            <img src="IMG/Patata5.jpg" alt="Post 01" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              quod reprehenderit porro amet debitis itaque ut quas nisi, animi,
+              facere tempora optio? Iure eius impedit repellendus, voluptas amet
+              suscipit animi.
+            </p>
+            <a href="https://nutricion360.es/alimentos/carbohidratos/papas-beneficios-y-danos" class="read-more">Leer mas</a>
+          </article>
+
+          <a href="cargando.html" class="link-carga" data-destino="MasEntradas.html" id="more-post">Ver mas entradas</a>
+        </section>
+        <div>
+          <!-- /row -->
+          <footer>
+            <p>Todos lo derechos reservados &copy;2024</p>
+
+            <p>Desarrollado por Pons</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".link-carga").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          localStorage.setItem("paginaDestino", this.dataset.destino);
+          window.location.href = "cargando.html";
+        });
+      });
+    </script>
+  </body>
+</html>

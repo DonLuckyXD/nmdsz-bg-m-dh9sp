@@ -1,0 +1,26 @@
+@import "colors.css";
+@import "common.css";
+@import "header.css";
+@import "navbar.css";
+@import "content.css";
+@import "aside.css";
+@import "read-more.css";
+@import "footer.css";
+@import "article.css";
+
+@media screen and (max-width:700px){
+    .navbar {
+        flex-direction: column;
+    }
+
+}
+
+#todo {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+

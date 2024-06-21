@@ -1,0 +1,23 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-primary); /* Asegúrate de definir esta variable en tu CSS */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    border-bottom: 2px solid #FF5733;
+    padding: 10px 0; /* Agregué un poco de espacio entre los enlaces */
+}
+
+.navbar a {
+    color: #E4F2E7;
+    padding: 10px 20px; /* Reduje el espaciado para que se vea más compacto */
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 5px; /* Borde redondeado para los enlaces */
+}
+
+.navbar a:hover {
+    background-color: var(--color-primary-dark); /* Define esta variable también */
+    color: #FF5733;
+    transition: 0.6s;
+}

@@ -1,0 +1,12 @@
+/*Variables comunes de colores*/
+:root{
+    --color-primary: #97A6A0;
+    --color-primary-dark: #2D3E40;
+
+    --color-secundary:#93BFB7;
+    --color-secundary-dark:#387373;
+
+    --color-gray-light: #f1f1f1;
+    --color-gray: #CCC;
+    --color-gray-dark: #333;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargando . . .</title>
+    <link rel="stylesheet" href="CSS/CSS Cargando/Cargando.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cubo">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loading">
+            <div>
+                <h1>Loading</h1>
+                <p>. . .</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+        window.location.href = localStorage.getItem('paginaDestino');
+        }, 2000); // Ajusta el tiempo según sea necesario
+
+
+    </script>   
+
+    
+
+
+    
+</body>
+</html>

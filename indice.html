@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="CSS/CSS Entradas/entradas.css">
+</head>
+<body>
+    <h1>Índice de mi blog</h1>
+    <ul>
+        <li><a href="cargando.html" class="link-carga" data-destino="Index.html">Página Principal</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="Comida.HTML">Comida favorita</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="Seriefav.html">Serie favorita</a></li>
+    </ul>
+
+    <footer>
+        <p>Todos los derechos reservados &copy;2024</p>
+        <p>Desarrollado por Pons</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll(".link-carga").forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            localStorage.setItem("paginaDestino", this.dataset.destino);
+            window.location.href = "cargando.html";
+          });
+        });
+      </script> 
+</body>
+</html>

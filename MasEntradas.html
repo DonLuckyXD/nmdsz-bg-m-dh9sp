@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="CSS/CSS Entradas/entradas.css">
+</head>
+<body>
+    <h1>Todos los links usados: </h1>
+    <main>
+    <ul>
+        <li><a href="cargando.html" class="link-carga" data-destino="https://www.youtube.com/watch?v=2jrg8YePv4w">Video 1</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="https://www.youtube.com/watch?v=PfHyXikSVBM">Video 2</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="https://www.youtube.com/watch?v=4WjLTFvp0F8">Video 3</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="https://www.ecologiaverde.com/tipos-de-patatas-2697.html">Página Tipos de patatas</a></li>
+        <li><a href="cargando.html" class="link-carga" data-destino="https://nutricion360.es/alimentos/carbohidratos/papas-beneficios-y-danos">Los beneficios de las papas</a></li>
+    </ul>
+    </main>
+
+    <script>
+        document.querySelectorAll(".link-carga").forEach(function (link) {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            localStorage.setItem("paginaDestino", this.dataset.destino);
+            window.location.href = "cargando.html";
+          });
+        });
+      </script>
+</body>
+</html>
